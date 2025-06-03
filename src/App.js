@@ -8,7 +8,7 @@ export default function App() {
     const formData = new FormData();
     formData.append('file', file);
 
-    const res = await fetch('http://localhost:3000/upload', {
+    const res = await fetch('https://sgml-api-production.up.railway.app/', {
       method: 'POST',
       body: formData,
     });
